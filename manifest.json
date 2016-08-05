@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "YouTube Now",
+	"version":"0.1.1",
+	
+	"description": "Easily search and play a YouTube video with one click",
+	"icons": {
+		"128": "icon128.png"
+	},
+	
+	"author": "Matt Levine",
+	
+	"offline_enabled": false,
+	"minimum_chrome_version": "6",
+	
+	"permissions": [
+		"contextMenus",
+		"tabs",
+		"http://youtube.com/watch/*",
+		"http://youtube.com/feeds/api/video/*"
+	],
+	"background": {
+		"scripts": ["main.js"],
+		"persistent": true
+	}
+}
